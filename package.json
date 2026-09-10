@@ -1,7 +1,7 @@
 {
-  "name": "on-demand-inspection",
+  "name": "thorne-inspection",
   "version": "1.0.0",
-  "description": "Professional quality control and inspection services website",
+  "description": "Professional conventional non-destructive testing (NDT) services website",
   "main": "index.html",
   "scripts": {
     "dev": "npx serve . -p 3000",
@@ -9,12 +9,13 @@
     "preview": "npx serve . -p 4173"
   },
   "keywords": [
+    "non-destructive-testing",
+    "ndt",
     "inspection",
-    "quality-control",
-    "audit",
-    "certification"
+    "oil-and-gas",
+    "ultrasonic-testing"
   ],
-  "author": "On Demand Inspection",
+  "author": "Thorne Inspection",
   "license": "MIT",
   "devDependencies": {
     "serve": "^14.2.1"
