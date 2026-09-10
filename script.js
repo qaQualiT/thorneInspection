@@ -101,188 +101,157 @@ const modalBody = document.querySelector('.modal-body');
 const closeModal = document.querySelector('.close-modal');
 
 const serviceDetails = {
-  inspection: {
-    title: 'Quality Inspection Services',
+  ut: {
+    title: 'Ultrasonic Testing (UT)',
     content: `
       <div class="service-detail">
-        <h3>Comprehensive Quality Inspection</h3>
-        <p>Our quality inspection services ensure your products meet the highest standards before they reach the market. We provide thorough, systematic evaluation of products, processes, and systems.</p>
+        <h3>Conventional Ultrasonic Testing</h3>
+        <p>Our conventional ultrasonic testing services use high-frequency sound waves to detect internal flaws, measure wall thickness, and evaluate weld integrity in critical oil and gas components.</p>
         
         <h4>What We Inspect:</h4>
         <ul>
-          <li>Product specifications and functionality</li>
-          <li>Manufacturing processes and procedures</li>
-          <li>Safety compliance and regulatory requirements</li>
-          <li>Material quality and durability</li>
-          <li>Packaging and labeling accuracy</li>
+          <li>Pipeline girth welds and seam welds</li>
+          <li>Pressure vessel welds and shell</li>
+          <li>Storage tank floor and shell</li>
+          <li>Structural steel welds</li>
+          <li>Forgings and castings</li>
         </ul>
         
         <h4>Our Approach:</h4>
         <ul>
-          <li>Risk-based inspection methodology</li>
-          <li>Advanced testing equipment and techniques</li>
-          <li>Real-time reporting and documentation</li>
-          <li>Corrective action recommendations</li>
+          <li>Straight beam & angle beam examination</li>
+          <li>Compression wave & shear wave techniques</li>
+          <li>Thickness measurement & corrosion mapping</li>
+          <li>Code-compliant procedures (ASME, API, AWS)</li>
         </ul>
         
         <div class="cta-section">
-          <p><strong>Ready to ensure your products meet quality standards?</strong></p>
-          <a href="#contact" class="btn btn-primary">Request Inspection</a>
+          <p><strong>Need reliable ultrasonic testing for your assets?</strong></p>
+          <a href="#contact" class="btn btn-primary">Request UT Inspection</a>
         </div>
       </div>
     `
   },
-  audit: {
-    title: 'Supplier Audit Services',
+  rt: {
+    title: 'Radiographic Testing (RT)',
     content: `
       <div class="service-detail">
-        <h3>Comprehensive Supplier Audits</h3>
-        <p>Evaluate and verify your suppliers' capabilities, quality systems, and compliance with industry standards through our thorough audit process.</p>
+        <h3>Conventional Radiographic Testing</h3>
+        <p>Our conventional radiographic testing uses X-ray and gamma ray sources to produce images of internal structures, revealing defects such as porosity, slag, incomplete fusion, and cracks in welds and castings.</p>
         
-        <h4>Audit Areas:</h4>
+        <h4>What We Inspect:</h4>
         <ul>
-          <li>Quality management systems (ISO 9001, etc.)</li>
-          <li>Production capabilities and capacity</li>
-          <li>Environmental and safety compliance</li>
-          <li>Financial stability and business continuity</li>
-          <li>Supply chain management</li>
+          <li>Butt welds and groove welds</li>
+          <li>Pipeline girth welds</li>
+          <li>Pressure vessel and boiler welds</li>
+          <li>Castings and forgings</li>
+          <li>Valves and fittings</li>
         </ul>
         
-        <h4>Deliverables:</h4>
+        <h4>Our Approach:</h4>
         <ul>
-          <li>Detailed audit reports with findings</li>
-          <li>Risk assessment and mitigation strategies</li>
-          <li>Supplier performance scorecards</li>
-          <li>Improvement recommendations</li>
+          <li>X-ray and Ir-192 / Se-75 gamma sources</li>
+          <li>Film and computed radiography</li>
+          <li>Image quality indicators (IQI) per code</li>
+          <li>ASME Section V compliant procedures</li>
         </ul>
         
         <div class="cta-section">
-          <p><strong>Need to verify supplier capabilities?</strong></p>
-          <a href="#contact" class="btn btn-primary">Schedule Audit</a>
+          <p><strong>Need radiographic testing for your welds?</strong></p>
+          <a href="#contact" class="btn btn-primary">Schedule RT Inspection</a>
         </div>
       </div>
     `
   },
-  project: {
-    title: 'Project Management Services',
+  mt: {
+    title: 'Magnetic Particle Testing (MT)',
     content: `
       <div class="service-detail">
-        <h3>End-to-End Project Management</h3>
-        <p>Comprehensive project oversight ensuring quality deliverables, timeline adherence, and stakeholder satisfaction throughout the project lifecycle.</p>
+        <h3>Magnetic Particle Inspection</h3>
+        <p>Our magnetic particle testing detects surface and near-surface discontinuities in ferromagnetic materials, providing fast and reliable crack detection for welds, shafts, and structural steel components.</p>
         
-        <h4>Project Phases:</h4>
+        <h4>What We Inspect:</h4>
         <ul>
-          <li>Project initiation and planning</li>
-          <li>Resource allocation and scheduling</li>
-          <li>Quality milestone monitoring</li>
-          <li>Risk management and mitigation</li>
-          <li>Progress tracking and reporting</li>
+          <li>Weld toes and heat-affected zones</li>
+          <li>Shafts and rotating equipment</li>
+          <li>Structural steel connections</li>
+          <li>Drill collar threads and connections</li>
+          <li>Lifting lugs and pad eyes</li>
         </ul>
         
-        <h4>Key Benefits:</h4>
+        <h4>Our Approach:</h4>
         <ul>
-          <li>Reduced project risks and delays</li>
-          <li>Improved quality outcomes</li>
-          <li>Enhanced stakeholder communication</li>
-          <li>Cost optimization and control</li>
+          <li>Wet visible & fluorescent magnetic particle</li>
+          <li>Dry powder particle methods</li>
+          <li>AC & DC yoke magnetization</li>
+          <li>Prod and coil magnetization techniques</li>
         </ul>
         
         <div class="cta-section">
-          <p><strong>Need expert project management?</strong></p>
-          <a href="#contact" class="btn btn-primary">Discuss Project</a>
+          <p><strong>Need surface crack detection on ferromagnetic materials?</strong></p>
+          <a href="#contact" class="btn btn-primary">Request MT Inspection</a>
         </div>
       </div>
     `
   },
-  engineering: {
-    title: 'Quality Engineering Services',
+  pt: {
+    title: 'Liquid Penetrant Testing (PT)',
     content: `
       <div class="service-detail">
-        <h3>Advanced Quality Engineering</h3>
-        <p>Leverage our engineering expertise to optimize quality processes, implement continuous improvement, and achieve operational excellence.</p>
+        <h3>Liquid Penetrant Inspection</h3>
+        <p>Our liquid penetrant testing detects surface-breaking discontinuities on both ferrous and non-ferrous materials, ideal for stainless steel welds, aluminum components, and castings where magnetic particle testing is not applicable.</p>
         
-        <h4>Engineering Solutions:</h4>
+        <h4>What We Inspect:</h4>
         <ul>
-          <li>Quality system design and optimization</li>
-          <li>Process improvement and automation</li>
-          <li>Statistical process control implementation</li>
-          <li>Failure analysis and root cause investigation</li>
-          <li>Quality training and capability building</li>
+          <li>Stainless steel welds and components</li>
+          <li>Aluminum and non-ferrous materials</li>
+          <li>Castings and forgings</li>
+          <li>Pressure vessel nozzles and attachments</li>
+          <li>Turbine blades and vanes</li>
         </ul>
         
-        <h4>Technologies We Use:</h4>
+        <h4>Our Approach:</h4>
         <ul>
-          <li>Six Sigma and Lean methodologies</li>
-          <li>Advanced statistical analysis tools</li>
-          <li>Digital quality management systems</li>
-          <li>IoT and sensor-based monitoring</li>
+          <li>Visible dye penetrant (Type II)</li>
+          <li>Fluorescent penetrant (Type I)</li>
+          <li>Water-washable & post-emulsifiable methods</li>
+          <li>ASME Section V compliant procedures</li>
         </ul>
         
         <div class="cta-section">
-          <p><strong>Ready to optimize your quality processes?</strong></p>
-          <a href="#contact" class="btn btn-primary">Get Consultation</a>
+          <p><strong>Need surface inspection on non-ferrous materials?</strong></p>
+          <a href="#contact" class="btn btn-primary">Request PT Inspection</a>
         </div>
       </div>
     `
   },
-  expediting: {
-    title: 'Expediting Services',
+  vt: {
+    title: 'Visual Testing (VT)',
     content: `
       <div class="service-detail">
-        <h3>Professional Expediting Services</h3>
-        <p>Proactive monitoring and coordination to ensure timely delivery while maintaining quality standards throughout the supply chain.</p>
+        <h3>Visual Inspection Services</h3>
+        <p>Our visual testing services provide the first line of defense in non-destructive examination, identifying surface discontinuities, dimensional discrepancies, and obvious defects through direct and remote visual inspection techniques.</p>
         
-        <h4>Expediting Activities:</h4>
+        <h4>What We Inspect:</h4>
         <ul>
-          <li>Production schedule monitoring</li>
-          <li>Vendor performance tracking</li>
-          <li>Quality milestone verification</li>
-          <li>Delivery coordination and logistics</li>
-          <li>Issue escalation and resolution</li>
+          <li>Weld appearance and profile</li>
+          <li>Surface finish and condition</li>
+          <li>Misalignment and dimensional verification</li>
+          <li>Corrosion and erosion assessment</li>
+          <li>Coating and lining condition</li>
         </ul>
         
-        <h4>Key Advantages:</h4>
+        <h4>Our Approach:</h4>
         <ul>
-          <li>Reduced delivery delays and risks</li>
-          <li>Improved supplier accountability</li>
-          <li>Enhanced project visibility</li>
-          <li>Proactive issue identification</li>
+          <li>Direct visual inspection</li>
+          <li>Remote visual inspection (borescope)</li>
+          <li>Weld gauges and measuring tools</li>
+          <li>Certified welding inspectors (CWI)</li>
         </ul>
         
         <div class="cta-section">
-          <p><strong>Need to accelerate your project timeline?</strong></p>
-          <a href="#contact" class="btn btn-primary">Start Expediting</a>
-        </div>
-      </div>
-    `
-  },
-  certification: {
-    title: 'Certification Services',
-    content: `
-      <div class="service-detail">
-        <h3>Professional Certification Services</h3>
-        <p>Comprehensive certification and compliance verification for equipment, processes, and systems to meet industry standards and regulatory requirements.</p>
-        
-        <h4>Certification Types:</h4>
-        <ul>
-          <li>Equipment and machinery certification</li>
-          <li>Process validation and verification</li>
-          <li>Quality system certification support</li>
-          <li>Regulatory compliance testing</li>
-          <li>Safety and environmental certifications</li>
-        </ul>
-        
-        <h4>Standards We Work With:</h4>
-        <ul>
-          <li>ISO 9001, 14001, 45001</li>
-          <li>API, ASME, ASTM standards</li>
-          <li>Industry-specific regulations</li>
-          <li>International safety standards</li>
-        </ul>
-        
-        <div class="cta-section">
-          <p><strong>Need certification support?</strong></p>
-          <a href="#contact" class="btn btn-primary">Get Certified</a>
+          <p><strong>Need professional visual inspection?</strong></p>
+          <a href="#contact" class="btn btn-primary">Request VT Inspection</a>
         </div>
       </div>
     `
