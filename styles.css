@@ -7,7 +7,7 @@
 
 :root {
   /* Theme Colors - Dark Green & Soft Yellow/Grey */
-  --safety-orange: #DAD4A5;
+  --safety-orange: #1A3A2A; 
   --safety-orange-light: #2D5A3D;
   --safety-orange-dark: #0D2818;
   --soft-blue: #D4C9A8;
@@ -294,7 +294,7 @@ p {
 }
 
 .highlight {
-  color: var(--safety-orange);
+  color: #DAD4A5;
   display: block;
 }
 
