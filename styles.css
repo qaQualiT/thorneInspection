@@ -288,6 +288,7 @@ p {
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
+  color: #ffffff;
   margin-bottom: var(--spacing-lg);
   line-height: 1.1;
 }
