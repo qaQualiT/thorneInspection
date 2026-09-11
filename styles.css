@@ -140,12 +140,10 @@ p {
 .logo-icon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--safety-orange), var(--safety-orange-light));
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
   font-size: 1.25rem;
 }
 
